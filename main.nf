@@ -193,7 +193,7 @@ if ( params.similarity.gpu == false ) {
  * The similarity_chunk process performs a single chunk of KINC similarity.
  */
 process similarity_chunk {
-        pod nodeSelector: 'gpu-type=2080Ti'
+        pod nodeSelector: 'gpu-type=1080Ti'
 	tag "${dataset}/${index}"
 	label "gpu"
 
